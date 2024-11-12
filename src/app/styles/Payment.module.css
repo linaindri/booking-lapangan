@@ -1,0 +1,120 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1280e7; 
+    padding: 10px 20px;
+}
+  
+.logoImage {
+    width: 80px; /* Logo size */
+    height: 80px; /* Logo size */
+    border-radius: 50%; /* Makes the logo circular */
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+  
+.navLinks {
+    display: flex;
+    list-style-type: none;
+}
+  
+.navLinks li {
+    margin-left: 20px;
+}
+  
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.paymentSection {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.paymentSection h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.paymentDetails {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.paymentDetails p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+}
+  
+.paymentForm label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.paymentForm select {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.payButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.payButton:hover {
+    background-color: #45a049;
+}
+  
+.footer {
+    background-color: #1280e7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+  
+.footerInfo, .socialMedia {
+    margin-bottom: 10px;
+}
+  
+.footerInfo p, .socialMedia p {
+    font-size: 14px;
+}
+  
+.socialMedia a {
+    color: white;
+    text-decoration: none;
+}
+  
+.socialMedia a:hover {
+    text-decoration: underline;
+}

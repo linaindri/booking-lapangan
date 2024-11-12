@@ -1,0 +1,171 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 60vh;
+}
+
+.heroImage {
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 2;
+}
+
+.tagline {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.heroButton {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cards Section */
+.facilitiesSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.cardImage {
+  width: 80%;         /* Set width to 80% of the parent container */
+  height: auto;       /* Maintain aspect ratio */
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+}
+
+.cardsTagline {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000; 
+}
+
+.cardsSection {
+display: flex; /* Enables horizontal alignment */
+justify-content: center; /* Centers the cards horizontally */
+gap: 20px; /* Adds space between the cards */
+padding: 20px;
+background-color: #1280e7; /* Light blue background */
+border-radius: 10px; /* Optional: rounds the edges of the background */
+}
+
+.card {
+  background-color: white; /* Set card background to white */
+  padding: 20px;            /* Add padding inside each card for spacing */
+  border-radius: 12px;      /* Optional: rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better appearance */
+  text-align: center;       /* Center-align the text and image inside the card */
+  width: 200px;             /* Fixed width for square shape */
+  height: 200px;            /* Set height equal to width to create a square */
+  display: flex;            /* Use flexbox to align the content inside the card */
+  flex-direction: column;   /* Stack image and text vertically */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+}
+
+
+/* Maps Section */
+.mapsSection {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #4da6ff; /* Light blue background color */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  text-align: center;
+  flex: 1;
+}
+
+.logoImage {
+  width: 80px; /* Logo size */
+  height: 80px; /* Logo size */
+  border-radius: 50%; /* Makes the logo circular */
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.footerContact {
+  flex: 2;
+  text-align: center;
+}
+
+.footerContact h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footerSocial {
+  text-align: right;
+  flex: 1;
+}
+
+.footerSocial h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+

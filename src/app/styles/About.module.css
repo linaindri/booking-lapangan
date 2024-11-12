@@ -1,0 +1,132 @@
+/* About.module.css */
+
+/* Container */
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1280e7;
+  }
+  
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .navLinks li {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navLinks .left {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+  
+  .navLinks .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* About Section */
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .logoImage {
+    width: 80px; /* Logo size */
+    height: 80px; /* Logo size */
+    border-radius: 50%; /* Membuat logo menjadi lingkaran */
+    object-fit: cover;
+    transform: translateX(700%);
+  }
+  
+  
+  .aboutContent h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+  }
+  
+  .aboutContent p {
+    font-size: 1rem;
+    max-width: 800px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .right,
+  .center,
+  .left {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .right img,
+  .footer .logoImage {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .center p,
+  .left p {
+    margin: 0.5rem 0;
+  }
+  
+  .left a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .left a:hover {
+    color: #ffffff;
+  }
+  
