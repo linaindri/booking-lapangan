@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 2;
 }
 
@@ -75,8 +75,8 @@
 }
 
 .cardImage {
-  width: 80%;         /* Set width to 80% of the parent container */
-  height: auto;       /* Maintain aspect ratio */
+  width: 80%;         
+  height: auto;      
   border-radius: 8px; 
   margin-bottom: 10px; 
 }
@@ -89,30 +89,30 @@
 }
 
 .cardsSection {
-display: flex; /* Enables horizontal alignment */
-justify-content: center; /* Centers the cards horizontally */
-gap: 20px; /* Adds space between the cards */
+display: flex; 
+justify-content: center; 
+gap: 20px; 
 padding: 20px;
-background-color: #1280e7; /* Light blue background */
-border-radius: 10px; /* Optional: rounds the edges of the background */
+background-color: #1280e7; 
+border-radius: 10px;
 }
 
 .card {
-  background-color: white; /* Set card background to white */
-  padding: 20px;            /* Add padding inside each card for spacing */
-  border-radius: 12px;      /* Optional: rounded corners for the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better appearance */
-  text-align: center;       /* Center-align the text and image inside the card */
-  width: 200px;             /* Fixed width for square shape */
-  height: 200px;            /* Set height equal to width to create a square */
-  display: flex;            /* Use flexbox to align the content inside the card */
-  flex-direction: column;   /* Stack image and text vertically */
-  justify-content: center;  /* Center content vertically */
-  align-items: center;     /* Center content horizontally */
+  background-color: white; 
+  padding: 20px;            
+  border-radius: 12px;      
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;       
+  width: 200px;            
+  height: 200px;            
+  display: flex;           
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;   
 }
 
 
-/* Maps Section */
+/* Maps */
 .mapsSection {
   padding: 20px;
   text-align: center;
@@ -120,7 +120,7 @@ border-radius: 10px; /* Optional: rounds the edges of the background */
 
 /* Footer */
 .footer {
-  background-color: #4da6ff; /* Light blue background color */
+  background-color: #4da6ff;
   padding: 20px;
   color: white;
   text-align: center;
@@ -140,9 +140,9 @@ border-radius: 10px; /* Optional: rounds the edges of the background */
 }
 
 .logoImage {
-  width: 80px; /* Logo size */
-  height: 80px; /* Logo size */
-  border-radius: 50%; /* Makes the logo circular */
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
   margin-bottom: 10px;
   object-fit: cover;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,13 +21,18 @@ export default function Home() {
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/daftar">Daftar Lapangan</Link></li>
+          <li>
+            <Link href="/login">
+              <button className={styles.loginButton}>Login</button>
+            </Link>
+          </li>
         </ul>
       </nav>
 
       {/* Hero Section */}
       <section className={styles.hero}>
         <Image
-          src="/lapangan.jpg" // Ganti dengan path hero image
+          src="/lapangan.jpg" 
           alt="Lapangan"
           layout="fill"
           objectFit="cover"
@@ -44,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cards Section */}
+      {/* Cards */}
       <section className={styles.facilitiesSection}>
         <h2 className={styles.cardsTagline}>FASILITAS</h2> 
         <div className={styles.cardsSection}>
@@ -78,12 +83,11 @@ export default function Home() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-           {/* Right: Logo and Text */}
            <div className={styles.right}>
             <img src="/futsal-logo.jpg" alt="Futsal Logo" className={styles.logoImage} />
           </div>
 
-          {/* Center: Address */}
+          {/* Alamat */}
           <div className={styles.center}>
             <p>Hubungi Kami</p>
             <p>Alamat Lapangan: Jl. Letjen Sutoyo No.1, Banyuwangi, Jawa Timur</p>
@@ -91,7 +95,7 @@ export default function Home() {
             <p>Futsalbanyuwangi@gmail.com</p>
           </div>
 
-          {/* Left: Social Media Links */}
+          {/* Sosial Media */}
           <div className={styles.left}>
             <h4>Social Media</h4>
             <p><a href="https://instagram.com/futsal_banyuwangi" target="_blank" rel="noopener noreferrer">Instagram: futsal_banyuwangi</a></p>

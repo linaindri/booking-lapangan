@@ -1,7 +1,29 @@
 .container {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  display: grid; /* Menggunakan Grid Layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Menyesuaikan jumlah kolom berdasarkan ukuran */
+  gap: 20px; /* Jarak antar kartu */
+  padding: 20px; /* Memberi jarak di dalam kontainer */
+  justify-content: center; /* Posisi konten di tengah */
+  align-items: stretch; /* Membuat kartu memiliki tinggi yang sama */
+}
+
+.card {
+  max-width: 300px; /* Maksimal lebar kartu */
+  padding: 16px; /* Padding dalam kartu */
+  background-color: #fff; /* Warna latar kartu */
+  border-radius: 8px; /* Membuat sudut kartu melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberi bayangan */
+  transition: transform 0.3s ease; /* Animasi hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membesarkan kartu saat hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Menyusun kartu dalam satu kolom untuk layar kecil */
+  }
 }
 
 .navbar {
@@ -48,8 +70,8 @@
 }
 
 .logoImage {
-  width: 80px; /* Logo size */
-  height: 80px; /* Logo size */
+  width: 80px;
+  height: 80px; 
   border-radius: 50%; /* Membuat logo menjadi lingkaran */
   object-fit: cover;
   transform: translateX(700%);
@@ -84,48 +106,10 @@
   z-index: 10; /* Menjaga teks tetap di atas gambar */
 }
 
-.fields {
-  padding: 20px;
-  text-align: center;
-}
-
-.fieldGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.fieldCard {
-  background-color: #e0e5ea;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgb(79, 132, 255);
-  text-align: center;
-}
-
-.fieldImage {
-  width: 100%; /* Gambar akan mengambil lebar penuh dari kontainer */
-  height: 350px; /* Tentukan tinggi tetap untuk gambar */
-  object-fit: cover; /* Menjaga gambar tetap pas dalam ukuran yang ditentukan */
-  border-radius: 8px;
-}
-
-.bookButton {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #1280e7;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.bookButton:hover {
-  background-color: #1280e7;
-}
+   
 
 .banner {
-  margin: 20px 0;
+  margin: 20px 0;    
   text-align: center;
   background-color: #dff9fb;
   padding: 20px;

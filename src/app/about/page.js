@@ -14,22 +14,22 @@ export default function About() {
 
       {/* Navbar */}
       <nav className={styles.navbar}>
-          <img src="/futsal-logo.jpg" alt="Logo" className={styles.logoImage} />
-          <ul className={styles.navLinks}>
-            <div className={styles.left}>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/Daftar">Daftar Lapangan</Link></li>
-            </div>
-            <div className={styles.right}>
-              <li><Link href="/about">About</Link></li>
-            </div>
-          </ul>
-        </nav>
+        <img src="/futsal-logo.jpg" alt="Logo" className={styles.logoImage} />
+        <ul className={styles.navLinks}>
+          <div className={styles.left}>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/daftar">Daftar Lapangan</Link></li> 
+          </div>
+          <div className={styles.right}>
+            <li><Link href="/about">About</Link></li> 
+          </div>
+        </ul>
+      </nav>
 
       {/* About Section */}
       <section className={styles.aboutSection}>
         <Image
-          src="/lapangan-futsal.jpg" // Replace with the actual image path
+          src="/lapangan-futsal.jpg" 
           alt="Tentang Kami"
           width={800}
           height={400}
@@ -51,12 +51,10 @@ export default function About() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          {/* Right: Logo and Text */}
           <div className={styles.right}>
             <img src="/futsal-logo.jpg" alt="Futsal Logo" className={styles.logoImage} />
           </div>
-
-          {/* Center: Address */}
+          {/* Address */}
           <div className={styles.center}>
             <p>Hubungi Kami</p>
             <p>Alamat Lapangan: Jl. Letjen Sutoyo No.1, Banyuwangi, Jawa Timur</p>
@@ -64,7 +62,7 @@ export default function About() {
             <p>Futsalbanyuwangi@gmail.com</p>
           </div>
 
-          {/* Left: Social Media Links */}
+          {/* Social Media */}
           <div className={styles.left}>
             <h4>Social Media</h4>
             <p><a href="https://instagram.com/futsal_banyuwangi" target="_blank" rel="noopener noreferrer">Instagram: futsal_banyuwangi</a></p>
